@@ -1,5 +1,6 @@
 import { Body, Controller, Post } from '@nestjs/common';
 import { ItemInfoService } from './item-info.service';
+import { ItemInfoRequestDto } from './dto/item-info-request-dto/item-info-request-dto';
 
 @Controller('item-info')
 export class ItemInfoController {
@@ -8,9 +9,9 @@ export class ItemInfoController {
 
     @Post('item-info')
     async getItemInfo(
-        @Body() body: any
+        @Body('body') body: ItemInfoRequestDto
     ) {
-        return await this.itemInfoService.getItemInfo();
+        return await this.itemInfoService.getItemInfo(body);
     }
 
 
