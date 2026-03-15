@@ -1,14 +1,11 @@
-import { IsString, ValidateNested } from "class-validator";
-import { Type } from "class-transformer";
-import { ItemDto } from "./item-dto";
+import { IsString, IsArray, IsInt } from "class-validator";
 
 export class ItemInfoRequestDto {
 
   @IsString()
-  offerId!: string;
+  offerUUID!: string;
 
-  @ValidateNested({ each: true })
-  @Type(() => ItemDto)
-  items!: ItemDto[];
-
+  @IsArray()
+  @IsInt({ each: true })
+  items!: number[];
 }

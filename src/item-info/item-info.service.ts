@@ -29,7 +29,7 @@ export class ItemInfoService {
                 discount_price: 1000,
                 new_price: 4000,
                 old_price: 5000,
-                picUrl: 'https://optovikk.ru/catalog/vkhodnye-dveri/dlya-doma/astra-bukle-grafit-belyy-matovyy-860kh2050-levaya/#img-2',
+                picUrl: 'https://optovikk.ru/upload/iblock/5d4/2v2odo78phbrgcq14nkejvlw2wid0lyu/2_%D0%B0%D1%81%D1%82%D1%80%D0%B0.jpg',
             }],
             totals : {
                 position_quantity: 1,
