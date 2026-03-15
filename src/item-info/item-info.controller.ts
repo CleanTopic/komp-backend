@@ -9,7 +9,7 @@ export class ItemInfoController {
 
     @Post('getInfoItem')
     async getItemInfo(
-        @Body('') body: any
+        @Body('') body: ItemInfoRequestDto
     ) {
         console.log('Запрос от React:', body);
         const result = await this.itemInfoService.getItemInfo(body);
