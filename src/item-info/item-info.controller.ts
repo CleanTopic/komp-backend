@@ -7,7 +7,7 @@ export class ItemInfoController {
 
     constructor( private readonly itemInfoService: ItemInfoService) { }
 
-    @Post('item-info')
+    @Post('getInfoItem')
     async getItemInfo(
         @Body('body') body: ItemInfoRequestDto
     ) {
